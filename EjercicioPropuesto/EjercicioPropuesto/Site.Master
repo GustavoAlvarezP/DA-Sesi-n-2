@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="EjercicioPropuesto.SiteMaster" %>
+
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Electrodomesticos</title> 
+    </head> 
+    <body> 
+        <form id="Form1" runat="server" method="POST"> 
+            <div>
+                <h1>Electrodomésticos</h1>
+                Seleccione un electrodomestico &nbsp; 
+                <br/><br/>
+                <select id="Electrodomesticos" runat="server"/>
+                <br/><br/> 
+                <input type="button" id="Aceptar" runat="server" value="Mostar Informacion" OnServerClick ="Aceptar_ServerClick" /> 
+                <br/>  <br/> 
+                <div style="font-weight:bold" id="Nombre" runat="server"></div>
+                <br/>
+                <div style="font-weight:bold" id="Codigo" runat="server"></div>
+                <br/>
+                <div style="font-weight:bold" id="Descripcion" runat="server"></div>
+                <br/>
+                <div style="font-weight:bold" id="Marca" runat="server"></div>
+                <br/>
+                <div style="font-weight:bold" id="Precio" runat="server"></div>
+                <br/>
+                <img id="Grafico" runat="server" />
+            </div> 
+        </form>
+    </body>
+</html>
